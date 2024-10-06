@@ -44,7 +44,148 @@ for i in range(1,21):
     print(i)
     print("********")
 '''
-
+'''
 x = int(input("Enter No : "))
 for i in range(1,11):
     print(f"{x}X{i} = {x*i}")
+'''
+#Take a number as input and check whether is prime or not
+# 2,3,5,7,11,13,19.....
+'''
+x = int(input("Enter No : "))
+for i in range(2,x):
+    if x%i==0:
+        print("Not Prime")
+        break
+else:
+    print("Prime")
+'''
+#Nested For Loop
+
+'''
+for i in range(0,4):
+    for j in range(1,4):
+        print(i,j)
+
+'''
+'''
+for i in range(1,4):
+    for j in range(0,i):
+        print(i,j)
+'''
+'''
+*
+**
+***
+****
+*****
+'''
+x = 1
+for i in range(1,6):
+    for j in range(i):
+       if x%2==0:
+         print(0,end="")
+       else:
+          print(1,end="")
+       x+=1
+    print()#next line
+'''
+1
+12
+123
+1234
+12345
+
+1
+22
+333
+4444
+55555
+
+1
+01
+010
+1010
+10101
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
