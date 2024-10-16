@@ -7,6 +7,7 @@
 #Find the sum of digits of number
 #=> 128 -> 1+2+8 = 11
 '''
+
 x = int(input("Enter No : "))
 res = 0
 for i in range(len(str(x))):
@@ -14,6 +15,7 @@ for i in range(len(str(x))):
     res = res+rem
     x = x//10
 print(res)
+
 '''
 #print first 10 nos of fibonacci series
 # 0 1 1 2 3 5 8 13.....
@@ -73,12 +75,14 @@ for i in range(1,4):
     for j in range(0,i):
         print(i,j)
 '''
+
 '''
 *
 **
 ***
 ****
 *****
+'''
 '''
 x = 1
 for i in range(1,6):
@@ -89,6 +93,7 @@ for i in range(1,6):
           print(1,end="")
        x+=1
     print()#next line
+'''
 '''
 1
 12
@@ -108,6 +113,118 @@ for i in range(1,6):
 1010
 10101
 '''
+
+'''
+*   *
+*   *
+*****
+*   *
+*   *
+'''
+'''
+# row = 5
+for i in range(1,6):
+    # col = 5
+    for j in range(1,6):
+        # if j in (1,5) or i==3:
+        if j ==1 or j== 5 or i==3:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+'''
+'''
+*   *
+**  *
+* * *
+*  **
+*   *
+'''
+'''
+for i in range(1,6):
+    # col = 5
+    for j in range(1,6):
+        if j ==1 or j== 5 or i==j:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+'''
+
+#String Exercise
+# 1. x = "aaabbbcccddddeee"
+# remove duplices from String.
+#Output => "abcde"
+'''
+
+x = "aabbcc"
+result = ""
+for char in x:
+    if char not in result:
+        result+=char
+print(result)
+'''
+'''
+x = "hello welcome to python"
+# find the occurance of each character
+result =""
+for char in x:
+    if char not in result:
+        result+=char
+        print(char,"=>",x.count(char))
+x = "hello welcome to python"
+# find the occurance of each character
+result =""
+for char in x:
+    if char not in result:
+        result+=char
+        print(char,"=>",x.count(char))
+'''
+
+# Q1.
+# x = "google.com"
+# print(len(x))
+
+# Q2.
+# x = "google.com"
+# res = ""
+# for i in x:
+#     if i not in res:
+#         res+=i
+#         print(i,":",x.count(i))
+
+# Q3
+# x = "w"
+# if len(x)<2:
+#     print("")
+# else:
+#     print(x[:2]+x[-2:])
+
+# Q4.
+x = 'restarrrrrt'
+print(x[0]+x[1:].replace(x[0],"$"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
